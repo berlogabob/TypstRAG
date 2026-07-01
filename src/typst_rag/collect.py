@@ -37,9 +37,9 @@ def section_for(rel_path: str) -> str:
     return " / ".join(parts)
 
 
-def url_for(rel_path: str) -> str:
+def url_for(rel_path: str, version: str) -> str:
     if not rel_path.startswith("docs/content/"):
-        return f"https://github.com/typst/typst/blob/{TYPST_VERSION}/{rel_path}"
+        return f"https://github.com/typst/typst/blob/{version}/{rel_path}"
     path = re.sub(r"\.(typ|md)$", "", rel_path.removeprefix("docs/content/")).strip("/")
     return "https://typst.app/docs/" if path == "index" else f"https://typst.app/docs/{path}/"
 
@@ -53,7 +53,7 @@ def iter_source_files() -> list[Path]:
     return sorted(set(paths))
 
 
-def collect_documents() -> None:
+def collect_documents(version: str = TYPST_VERSION) -> None:
     PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
     count = 0
     with DOCUMENTS_JSONL.open("w", encoding="utf-8") as out:
@@ -63,12 +63,12 @@ def collect_documents() -> None:
                 continue
             rel_path = path.relative_to(TYPST_REPO_DIR).as_posix()
             doc = {
-                "id": stable_id(TYPST_VERSION, rel_path),
+                "id": stable_id(version, rel_path),
                 "source_path": rel_path,
                 "kind": guess_kind(rel_path),
                 "section": section_for(rel_path),
-                "version": TYPST_VERSION,
-                "url": url_for(rel_path),
+                "version": version,
+                "url": url_for(rel_path, version),
                 "text": text,
             }
             out.write(json.dumps(doc, ensure_ascii=False) + "\n")

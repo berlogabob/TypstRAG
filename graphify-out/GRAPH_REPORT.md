@@ -1,16 +1,16 @@
 # Graph Report - TypstRAG  (2026-07-01)
 
 ## Corpus Check
-- 19 files · ~7,766 words
+- 19 files · ~7,828 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 119 nodes · 167 edges · 13 communities (12 shown, 1 thin omitted)
+- 120 nodes · 173 edges · 13 communities (12 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `cdfc5c58`
+- Built from commit: `3ad57320`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -29,27 +29,27 @@
 
 ## God Nodes (most connected - your core abstractions)
 1. `RAG for Typst Documentation on LanceDB` - 26 edges
-2. `search()` - 10 edges
-3. `collect_documents()` - 9 edges
+2. `collect_documents()` - 10 edges
+3. `search()` - 10 edges
 4. `Using TypstRAG` - 9 edges
 5. `Working Plan: Typst RAG with LanceDB` - 8 edges
-6. `retrieval_only()` - 6 edges
-7. `chunk_documents()` - 6 edges
-8. `format_results()` - 6 edges
-9. `openai_compatible()` - 5 edges
-10. `build_index()` - 5 edges
+6. `chunk_documents()` - 7 edges
+7. `retrieval_only()` - 6 edges
+8. `build_index()` - 6 edges
+9. `update_docs()` - 6 edges
+10. `format_results()` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `build_all()` --calls--> `build_index()`  [EXTRACTED]
   src/typst_rag/cli.py → src/typst_rag/build_index.py
 - `build_index_cmd()` --calls--> `build_index()`  [EXTRACTED]
   src/typst_rag/cli.py → src/typst_rag/build_index.py
-- `build_all()` --calls--> `chunk_documents()`  [EXTRACTED]
-  src/typst_rag/cli.py → src/typst_rag/chunk.py
+- `update_docs()` --calls--> `build_index()`  [EXTRACTED]
+  src/typst_rag/cli.py → src/typst_rag/build_index.py
 - `chunk()` --calls--> `chunk_documents()`  [EXTRACTED]
   src/typst_rag/cli.py → src/typst_rag/chunk.py
-- `collect()` --calls--> `collect_documents()`  [EXTRACTED]
-  src/typst_rag/cli.py → src/typst_rag/collect.py
+- `fetch()` --calls--> `fetch_typst()`  [EXTRACTED]
+  src/typst_rag/cli.py → src/typst_rag/fetch_typst.py
 
 ## Import Cycles
 - None detected.
@@ -61,8 +61,8 @@ Cohesion: 0.08
 Nodes (24): 10. Chunking strategy, 11. Embeddings, 12. Build LanceDB index, 13. Search module, 14. LLM-agnostic answer generation, 15. CLI, 16. End-to-end command sequence, 17. Evaluation plan (+16 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.21
-Nodes (15): DataFrame, SearchMode, build_prompt(), openai_compatible(), retrieval_only(), ask(), build_all(), eval_cmd() (+7 more)
+Cohesion: 0.27
+Nodes (12): DataFrame, SearchMode, build_prompt(), openai_compatible(), retrieval_only(), ask(), eval_cmd(), search_cmd() (+4 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.12
@@ -93,8 +93,8 @@ Cohesion: 0.40
 Nodes (5): 21. Common failure modes, Problem: generated answers hallucinate Typst syntax, Problem: Russian questions retrieve weak results, Problem: Rust doc comments are noisy, Problem: search misses exact function names
 
 ### Community 9 - "Community 9"
-Cohesion: 0.60
-Nodes (4): chunk_documents(), sliding(), split_headings(), chunk()
+Cohesion: 0.27
+Nodes (9): chunk_documents(), sliding(), split_headings(), build_all(), chunk(), doctor(), fetch(), update_docs() (+1 more)
 
 ## Knowledge Gaps
 - **59 isolated node(s):** `typst-rag`, `Progress`, `Evidence`, `Goal`, `Commands` (+54 more)
@@ -105,7 +105,7 @@ Nodes (4): chunk_documents(), sliding(), split_headings(), chunk()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `RAG for Typst Documentation on LanceDB` connect `Community 0` to `Community 8`, `Community 7`?**
-  _High betweenness centrality (0.078) - this node is a cross-community bridge._
+  _High betweenness centrality (0.077) - this node is a cross-community bridge._
 - **Why does `18. Retrieval quality improvements` connect `Community 7` to `Community 0`?**
   _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **Why does `21. Common failure modes` connect `Community 8` to `Community 0`?**

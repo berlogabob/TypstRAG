@@ -1,3 +1,5 @@
+import json
+
 import lancedb
 import typer
 from rich import print
@@ -42,6 +44,15 @@ def build_all() -> None:
     build_index()
 
 
+@app.command("update-docs")
+def update_docs(version: str) -> None:
+    fetch_typst(version)
+    collect_documents(version)
+    chunk_documents()
+    build_index()
+    doctor()
+
+
 @app.command()
 def doctor() -> None:
     checks: list[tuple[str, bool, str]] = []
@@ -51,7 +62,10 @@ def doctor() -> None:
     if DOCUMENTS_JSONL.exists():
         checks.append(("document count", True, str(sum(1 for _ in DOCUMENTS_JSONL.open(encoding="utf-8")))))
     if CHUNKS_JSONL.exists():
-        checks.append(("chunk count", True, str(sum(1 for _ in CHUNKS_JSONL.open(encoding="utf-8")))))
+        chunks = [json.loads(line) for line in CHUNKS_JSONL.open(encoding="utf-8")]
+        versions = sorted({str(chunk.get("version", "")) for chunk in chunks})
+        checks.append(("chunk count", True, str(len(chunks))))
+        checks.append(("indexed version", True, ", ".join(versions)))
     try:
         table = lancedb.connect(LANCEDB_DIR).open_table(LANCEDB_TABLE)
         checks.append(("lancedb table", True, f"{LANCEDB_TABLE}: {table.count_rows()} rows"))

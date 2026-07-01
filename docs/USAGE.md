@@ -13,6 +13,12 @@ uv run typst-rag doctor
 uv run typst-rag ask "how to make a two-column academic paper?" --limit 5
 ```
 
+When Typst releases a new docs tag:
+
+```bash
+uv run typst-rag update-docs v0.16.0
+```
+
 Optional portable path for tools/skills:
 
 ```bash

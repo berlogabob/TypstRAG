@@ -25,13 +25,13 @@
     "semantic_hash": ""
   },
   "src/typst_rag/cli.py": {
-    "mtime": 1782944771.870803,
-    "ast_hash": "d019736d39ab89f561ba710fa81ec814",
+    "mtime": 1782944925.2451,
+    "ast_hash": "6a6789c39d8c959352fd865787fd9f43",
     "semantic_hash": ""
   },
   "src/typst_rag/collect.py": {
-    "mtime": 1782914444.6773999,
-    "ast_hash": "e306a33196b850c6fa1bbfd05f473ac3",
+    "mtime": 1782944904.5283272,
+    "ast_hash": "078202f408a851577589129257226a5c",
     "semantic_hash": ""
   },
   "src/typst_rag/config.py": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "src/typst_rag/fetch_typst.py": {
-    "mtime": 1782914444.4461315,
-    "ast_hash": "96d5b2aa27010607cec3cb302b989c2a",
+    "mtime": 1782944880.691163,
+    "ast_hash": "3a56882c3addb2390319128efaaf76b4",
     "semantic_hash": ""
   },
   "src/typst_rag/search.py": {
@@ -60,13 +60,13 @@
     "semantic_hash": ""
   },
   "PLAN.md": {
-    "mtime": 1782944803.0817971,
-    "ast_hash": "4d84ce70db39942e6b349e2c5f194d78",
+    "mtime": 1782944979.7737148,
+    "ast_hash": "9ce9cf275d7c03e062ba701a50d35007",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1782944790.3457525,
-    "ast_hash": "92c081674633cfb27926ead5c03deb28",
+    "mtime": 1782944937.5612633,
+    "ast_hash": "66cba637989930cb034e7e8a7e8b7cac",
     "semantic_hash": ""
   },
   "_income/typst_lancedb_rag_report.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "docs/USAGE.md": {
-    "mtime": 1782944797.8457778,
-    "ast_hash": "67ad919387edfedec2c26f43704cab22",
+    "mtime": 1782944937.573143,
+    "ast_hash": "f4a4525ff136fcfce46a177b8a3565f0",
     "semantic_hash": ""
   },
   "prompts/answer_system.md": {

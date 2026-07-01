@@ -11,6 +11,9 @@ uv sync
 uv run typst-rag build-all
 uv run typst-rag doctor
 uv run typst-rag ask "how to make a two-column academic paper?" --limit 5
+
+# when Typst releases a new docs tag
+uv run typst-rag update-docs v0.16.0
 ```
 
 ## Use from Hermes as a skill
