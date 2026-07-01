@@ -10,6 +10,7 @@ cd TypstRAG
 uv sync
 uv run typst-rag build-all
 uv run typst-rag doctor
+uv run python scripts/smoke.py
 uv run typst-rag ask "how to make a two-column academic paper?" --limit 5
 ```
 

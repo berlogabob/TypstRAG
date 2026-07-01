@@ -60,13 +60,13 @@
     "semantic_hash": ""
   },
   "PLAN.md": {
-    "mtime": 1782944979.7737148,
-    "ast_hash": "9ce9cf275d7c03e062ba701a50d35007",
+    "mtime": 1782945027.339504,
+    "ast_hash": "bc377c7cda476d2aad725e09fb5df1e4",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1782944937.5612633,
-    "ast_hash": "66cba637989930cb034e7e8a7e8b7cac",
+    "mtime": 1782945035.9268692,
+    "ast_hash": "fd7b0e0dc1d78dcc9fe1d219e7db96f2",
     "semantic_hash": ""
   },
   "_income/typst_lancedb_rag_report.md": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "docs/USAGE.md": {
-    "mtime": 1782944937.573143,
-    "ast_hash": "f4a4525ff136fcfce46a177b8a3565f0",
+    "mtime": 1782945035.923217,
+    "ast_hash": "af6d26555e4bf00ab43a83cea6b45199",
     "semantic_hash": ""
   },
   "prompts/answer_system.md": {
@@ -92,6 +92,11 @@
   "skills/typst-rag/SKILL.md": {
     "mtime": 1782938531.7347639,
     "ast_hash": "536756e0d84bb590c53a794d9d9cf8d5",
+    "semantic_hash": ""
+  },
+  "scripts/smoke.py": {
+    "mtime": 1782945006.7184227,
+    "ast_hash": "67842ec46bd9b0302a5b6aec390360fb",
     "semantic_hash": ""
   }
 }
