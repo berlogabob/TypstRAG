@@ -1,0 +1,5 @@
+{"id":"q001","query":"how to add a figure caption","expected_terms":["figure","caption"]}
+{"id":"q002","query":"как сделать две колонки","expected_terms":["page","columns"]}
+{"id":"q003","query":"show heading where level 2","expected_terms":["show","heading","level"]}
+{"id":"q004","query":"bibliography citation style","expected_terms":["bibliography","citation","style"]}
+{"id":"q005","query":"set page margin","expected_terms":["page","margin"]}

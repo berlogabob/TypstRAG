@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+data/raw/typst/
+data/processed/*.jsonl
+data/lancedb/

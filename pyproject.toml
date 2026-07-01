@@ -1,0 +1,25 @@
+[project]
+name = "typst-rag"
+version = "0.1.0"
+description = "Local retrieval-only RAG over Typst docs with LanceDB"
+readme = "README.md"
+authors = [
+    { name = "BerlogaBob", email = "berloga.bob@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "gitpython>=3.1.50",
+    "lancedb>=0.33.0",
+    "pandas>=3.0.3",
+    "pyarrow>=24.0.0",
+    "rich>=15.0.0",
+    "sentence-transformers>=5.6.0",
+    "typer>=0.25.1",
+]
+
+[project.scripts]
+typst-rag = "typst_rag.cli:app"
+
+[build-system]
+requires = ["uv_build>=0.11.26,<0.12.0"]
+build-backend = "uv_build"
