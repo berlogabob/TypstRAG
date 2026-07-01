@@ -83,7 +83,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_build_index",
-      "community": 9,
+      "community": 5,
       "norm_label": "build_index.py"
     },
     {
@@ -93,7 +93,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_typst_rag_build_index_build_index",
-      "community": 9,
+      "community": 1,
       "norm_label": "build_index()"
     },
     {
@@ -143,7 +143,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_cli",
-      "community": 9,
+      "community": 1,
       "norm_label": "cli.py"
     },
     {
@@ -153,7 +153,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_typst_rag_cli_fetch",
-      "community": 9,
+      "community": 1,
       "norm_label": "fetch()"
     },
     {
@@ -183,7 +183,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_typst_rag_cli_build_index_cmd",
-      "community": 9,
+      "community": 1,
       "norm_label": "build_index_cmd()"
     },
     {
@@ -193,7 +193,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_typst_rag_cli_build_all",
-      "community": 9,
+      "community": 1,
       "norm_label": "build_all()"
     },
     {
@@ -203,7 +203,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_typst_rag_cli_update_docs",
-      "community": 9,
+      "community": 1,
       "norm_label": "update_docs()"
     },
     {
@@ -213,7 +213,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "src_typst_rag_cli_doctor",
-      "community": 9,
+      "community": 1,
       "norm_label": "doctor()"
     },
     {
@@ -333,7 +333,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_config",
-      "community": 9,
+      "community": 5,
       "norm_label": "config.py"
     },
     {
@@ -413,7 +413,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_fetch_typst",
-      "community": 9,
+      "community": 1,
       "norm_label": "fetch_typst.py"
     },
     {
@@ -423,7 +423,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_typst_rag_fetch_typst_fetch_typst",
-      "community": 9,
+      "community": 1,
       "norm_label": "fetch_typst()"
     },
     {
@@ -520,7 +520,7 @@
       "label": "Evidence",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "plan_evidence",
       "community": 3,
@@ -530,7 +530,7 @@
       "label": "Goal",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L53",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "plan_goal",
       "community": 3,
@@ -540,7 +540,7 @@
       "label": "Commands",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L63",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "plan_commands",
       "community": 3,
@@ -550,7 +550,7 @@
       "label": "Acceptance",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L71",
+      "source_location": "L79",
       "_origin": "ast",
       "id": "plan_acceptance",
       "community": 3,
@@ -560,7 +560,7 @@
       "label": "Next Improvements Roadmap",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L79",
+      "source_location": "L87",
       "_origin": "ast",
       "id": "plan_next_improvements_roadmap",
       "community": 3,
@@ -570,7 +570,7 @@
       "label": "Phase 6. Package-quality local distribution",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L83",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "plan_phase_6_package_quality_local_distribution",
       "community": 3,
@@ -580,7 +580,7 @@
       "label": "Phase 7. Professor-facing artifact",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L91",
+      "source_location": "L99",
       "_origin": "ast",
       "id": "plan_phase_7_professor_facing_artifact",
       "community": 3,
@@ -590,7 +590,7 @@
       "label": "Phase 8. Typst Universe decision",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L97",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "plan_phase_8_typst_universe_decision",
       "community": 3,
@@ -600,7 +600,7 @@
       "label": "Phase 9. Optional connectors only if needed",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L110",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "plan_phase_9_optional_connectors_only_if_needed",
       "community": 3,
@@ -610,7 +610,7 @@
       "label": "Skipped until needed",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L116",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "plan_skipped_until_needed",
       "community": 3,
@@ -1045,6 +1045,26 @@
       "id": "docs_ponytail_ponytail_prompt",
       "community": 2,
       "norm_label": "ponytail prompt"
+    },
+    {
+      "label": "RELEASE.md",
+      "file_type": "document",
+      "source_file": "docs/RELEASE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_release",
+      "community": 2,
+      "norm_label": "release.md"
+    },
+    {
+      "label": "Release checklist",
+      "file_type": "document",
+      "source_file": "docs/RELEASE.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_release_release_checklist",
+      "community": 2,
+      "norm_label": "release checklist"
     },
     {
       "label": "USAGE.md",
@@ -2378,7 +2398,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L71",
+      "source_location": "L79",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_acceptance",
@@ -2388,7 +2408,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L63",
+      "source_location": "L71",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_commands",
@@ -2398,7 +2418,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L39",
+      "source_location": "L47",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_evidence",
@@ -2408,7 +2428,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L53",
+      "source_location": "L61",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_goal",
@@ -2418,7 +2438,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L79",
+      "source_location": "L87",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_next_improvements_roadmap",
@@ -2438,7 +2458,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L116",
+      "source_location": "L124",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_skipped_until_needed",
@@ -2448,7 +2468,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L83",
+      "source_location": "L91",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_6_package_quality_local_distribution",
@@ -2458,7 +2478,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L91",
+      "source_location": "L99",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_7_professor_facing_artifact",
@@ -2468,7 +2488,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L97",
+      "source_location": "L105",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_8_typst_universe_decision",
@@ -2478,7 +2498,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L110",
+      "source_location": "L118",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_9_optional_connectors_only_if_needed",
@@ -2492,6 +2512,16 @@
       "weight": 1.0,
       "source": "readme",
       "target": "docs_ponytail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "docs_release",
       "confidence_score": 1.0
     },
     {
@@ -2917,6 +2947,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/RELEASE.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_release",
+      "target": "docs_release_release_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/USAGE.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -3056,5 +3096,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "54f0447c63c450eee0c7a12c23504cb50b1beae5"
+  "built_at_commit": "629ee011fc0aaa67ec83bcbd05a277cb9f45b886"
 }

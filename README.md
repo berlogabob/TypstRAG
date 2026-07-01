@@ -52,4 +52,5 @@ See:
 
 - [docs/USAGE.md](docs/USAGE.md)
 - [docs/PONYTAIL.md](docs/PONYTAIL.md)
+- [docs/RELEASE.md](docs/RELEASE.md)
 - [wiki](https://github.com/berlogabob/TypstRAG/wiki)

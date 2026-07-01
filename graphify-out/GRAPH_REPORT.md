@@ -1,16 +1,16 @@
 # Graph Report - TypstRAG  (2026-07-01)
 
 ## Corpus Check
-- 20 files · ~7,894 words
+- 21 files · ~7,971 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 121 nodes · 176 edges · 13 communities (12 shown, 1 thin omitted)
+- 123 nodes · 178 edges · 13 communities (12 shown, 1 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `54f0447c`
+- Built from commit: `629ee011`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -44,12 +44,12 @@
   src/typst_rag/build_index.py → src/typst_rag/embed.py
 - `build_index_cmd()` --calls--> `build_index()`  [EXTRACTED]
   src/typst_rag/cli.py → src/typst_rag/build_index.py
+- `build_all()` --calls--> `chunk_documents()`  [EXTRACTED]
+  src/typst_rag/cli.py → src/typst_rag/chunk.py
 - `chunk()` --calls--> `chunk_documents()`  [EXTRACTED]
   src/typst_rag/cli.py → src/typst_rag/chunk.py
-- `fetch()` --calls--> `fetch_typst()`  [EXTRACTED]
-  src/typst_rag/cli.py → src/typst_rag/fetch_typst.py
-- `collect()` --calls--> `collect_documents()`  [EXTRACTED]
-  src/typst_rag/cli.py → src/typst_rag/collect.py
+- `update_docs()` --calls--> `chunk_documents()`  [EXTRACTED]
+  src/typst_rag/cli.py → src/typst_rag/chunk.py
 
 ## Import Cycles
 - None detected.
@@ -61,12 +61,12 @@ Cohesion: 0.08
 Nodes (24): 10. Chunking strategy, 11. Embeddings, 12. Build LanceDB index, 13. Search module, 14. LLM-agnostic answer generation, 15. CLI, 16. End-to-end command sequence, 17. Evaluation plan (+16 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.24
-Nodes (12): DataFrame, SearchMode, build_prompt(), openai_compatible(), retrieval_only(), ask(), eval_cmd(), search_cmd() (+4 more)
+Cohesion: 0.19
+Nodes (19): DataFrame, SearchMode, build_prompt(), openai_compatible(), retrieval_only(), build_index(), ask(), build_all() (+11 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.12
-Nodes (15): Ponytail prompt, 1. Local install, 2. Hermes skill: any Hermes model, 3. Local Ollama answer mode, 4. Plain Ollama chat, 5. ChatGPT or Claude web chat, 6. GitHub Pages / FTP hosting, 7. Example questions (+7 more)
+Cohesion: 0.11
+Nodes (16): Ponytail prompt, Release checklist, 1. Local install, 2. Hermes skill: any Hermes model, 3. Local Ollama answer mode, 4. Plain Ollama chat, 5. ChatGPT or Claude web chat, 6. GitHub Pages / FTP hosting (+8 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.15
@@ -77,7 +77,7 @@ Cohesion: 0.39
 Nodes (8): Path, collect(), collect_documents(), guess_kind(), iter_source_files(), section_for(), stable_id(), url_for()
 
 ### Community 5 - "Community 5"
-Cohesion: 0.60
+Cohesion: 0.48
 Nodes (4): SentenceTransformer, embed_passages(), embed_query(), model()
 
 ### Community 6 - "Community 6"
@@ -93,11 +93,11 @@ Cohesion: 0.40
 Nodes (5): 21. Common failure modes, Problem: generated answers hallucinate Typst syntax, Problem: Russian questions retrieve weak results, Problem: Rust doc comments are noisy, Problem: search misses exact function names
 
 ### Community 9 - "Community 9"
-Cohesion: 0.25
-Nodes (11): build_index(), chunk_documents(), sliding(), split_headings(), build_all(), build_index_cmd(), chunk(), doctor() (+3 more)
+Cohesion: 0.47
+Nodes (4): chunk_documents(), sliding(), split_headings(), chunk()
 
 ## Knowledge Gaps
-- **59 isolated node(s):** `typst-rag`, `Progress`, `Evidence`, `Goal`, `Commands` (+54 more)
+- **60 isolated node(s):** `typst-rag`, `Progress`, `Evidence`, `Goal`, `Commands` (+55 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **1 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -105,14 +105,14 @@ Nodes (11): build_index(), chunk_documents(), sliding(), split_headings(), build
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `RAG for Typst Documentation on LanceDB` connect `Community 0` to `Community 8`, `Community 7`?**
-  _High betweenness centrality (0.076) - this node is a cross-community bridge._
+  _High betweenness centrality (0.073) - this node is a cross-community bridge._
 - **Why does `18. Retrieval quality improvements` connect `Community 7` to `Community 0`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **Why does `21. Common failure modes` connect `Community 8` to `Community 0`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
 - **What connects `typst-rag`, `Progress`, `Evidence` to the rest of the system?**
-  _59 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _60 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.08 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.11764705882352941 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._

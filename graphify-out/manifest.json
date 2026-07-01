@@ -60,13 +60,13 @@
     "semantic_hash": ""
   },
   "PLAN.md": {
-    "mtime": 1782945027.339504,
-    "ast_hash": "bc377c7cda476d2aad725e09fb5df1e4",
+    "mtime": 1782945082.1466222,
+    "ast_hash": "2fd305307257b035ca3f51449d6e2a6a",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1782945035.9268692,
-    "ast_hash": "fd7b0e0dc1d78dcc9fe1d219e7db96f2",
+    "mtime": 1782945070.500185,
+    "ast_hash": "8709de9e4ba9b1be1dc549d1426850f8",
     "semantic_hash": ""
   },
   "_income/typst_lancedb_rag_report.md": {
@@ -97,6 +97,11 @@
   "scripts/smoke.py": {
     "mtime": 1782945006.7184227,
     "ast_hash": "67842ec46bd9b0302a5b6aec390360fb",
+    "semantic_hash": ""
+  },
+  "docs/RELEASE.md": {
+    "mtime": 1782945062.3651657,
+    "ast_hash": "eacf1d6f94bc8e8e8bbc4012be048469",
     "semantic_hash": ""
   }
 }

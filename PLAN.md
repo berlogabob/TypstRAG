@@ -31,10 +31,18 @@ Ponytail target: working retrieval first. No Docker, LangChain, LlamaIndex, API,
 - [x] 5. Stop / decide next
   - [x] CLI is enough for Ollama sidecar
   - [x] Hermes skill path added for any-model usage
-- [ ] 6. Optional connector only if needed
-  - [ ] Open WebUI/tool connector later, only if copy-paste/CLI is bottleneck
+- [x] 6. Package-quality local distribution
+  - [x] install/update docs
+  - [x] `typst-rag doctor`
+  - [x] `typst-rag update-docs`
+  - [x] smoke check
+  - [x] release checklist
+- [ ] 7. Professor-facing artifact
+  - [ ] polished project page/demo
+  - [ ] academic paper `.typ` example
+  - [ ] citation examples
 
-Current step: **6. Optional connector only if needed**.
+Current step: **7. Professor-facing artifact**.
 
 ## Evidence
 
@@ -86,7 +94,7 @@ Ponytail priority: make local use and professor sharing solid before adding host
 - [x] Add `typst-rag doctor` command: verify data dirs, document/chunk counts, LanceDB table, docs version, embedding model.
 - [x] Add `typst-rag update-docs vX.Y.Z` command instead of manually editing `config.py`.
 - [x] Add a small assert-based smoke check for collect/chunk/search so packaging regressions are caught.
-- [ ] Add GitHub release checklist: tag, smoke test, wiki links, skill raw URL.
+- [x] Add GitHub release checklist: tag, smoke test, wiki links, skill raw URL.
 
 ### Phase 7. Professor-facing artifact
 
