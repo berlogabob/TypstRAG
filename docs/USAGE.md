@@ -108,3 +108,7 @@ uv run typst-rag ask "how do I add figure captions?" --limit 5
 uv run typst-rag ask "bibliography and citations in Typst" --limit 5
 uv run typst-rag ask "academic paper with title authors abstract two columns figures bibliography" --limit 5
 ```
+
+## 8. Ponytail prompt
+
+For a full anti-overengineering prompt, see [PONYTAIL.md](PONYTAIL.md).

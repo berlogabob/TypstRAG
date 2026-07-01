@@ -43,4 +43,8 @@ uv run typst-rag ask "prepare a Typst layout for an academic article" --mode ope
 
 ## More examples
 
-See [docs/USAGE.md](docs/USAGE.md) and the [wiki](https://github.com/berlogabob/TypstRAG/wiki).
+See:
+
+- [docs/USAGE.md](docs/USAGE.md)
+- [docs/PONYTAIL.md](docs/PONYTAIL.md)
+- [wiki](https://github.com/berlogabob/TypstRAG/wiki)
