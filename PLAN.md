@@ -28,11 +28,13 @@ Ponytail target: working retrieval first. No Docker, LangChain, LlamaIndex, API,
   - [x] `src/typst_rag/answer.py`
   - [x] OpenAI-compatible mode only
   - [x] cited answers from context only
-- [ ] 5. Stop / decide next
-  - [ ] if CLI is enough: stop
-  - [ ] if needed: add API/UI later
+- [x] 5. Stop / decide next
+  - [x] CLI is enough for Ollama sidecar
+  - [x] Hermes skill path added for any-model usage
+- [ ] 6. Optional connector only if needed
+  - [ ] Open WebUI/tool connector later, only if copy-paste/CLI is bottleneck
 
-Current step: **5. Stop / decide next**.
+Current step: **6. Optional connector only if needed**.
 
 ## Evidence
 
@@ -44,6 +46,7 @@ compile: uv run python -m compileall -q src passed
 eval: 5 questions, average expected-term hit rate 1.00
 dedupe: search output now shows unique source_path entries
 LLM adapter: `typst-rag ask --mode openai-compatible`, stdlib urllib, no new dependency
+Hermes integration: `skills/typst-rag/SKILL.md` + `docs/USAGE.md`; use retrieval as context with any Hermes model
 ```
 
 ## Goal
