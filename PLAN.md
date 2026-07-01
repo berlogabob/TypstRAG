@@ -76,6 +76,43 @@ uv run typst-rag eval
 - [x] bibliography query finds bibliography/citation docs
 - [x] page margin query finds page setup docs
 
+## Next Improvements Roadmap
+
+Ponytail priority: make local use and professor sharing solid before adding hosted/API layers.
+
+### Phase 6. Package-quality local distribution
+
+- [ ] Add install/update docs for normal users: clone, `uv sync`, `build-all`, update `TYPST_VERSION`.
+- [ ] Add `typst-rag doctor` command: verify `uv`, data dirs, LanceDB table, docs version, embedding model.
+- [ ] Add `typst-rag update-docs --version vX.Y.Z` command instead of manually editing `config.py`.
+- [ ] Add a small fixture-based test for collect/chunk/search so packaging regressions are caught.
+- [ ] Add GitHub release checklist: tag, smoke test, wiki links, skill raw URL.
+
+### Phase 7. Professor-facing artifact
+
+- [ ] Add a polished project page/demo: screenshots, architecture diagram, usage paths.
+- [ ] Add one academic-paper Typst example generated with the RAG and verified with `typst compile`.
+- [ ] Add citation examples for source docs used in answers.
+
+### Phase 8. Typst Universe decision
+
+Typst Universe packages are Typst packages/templates: `typst.toml`, `.typ` entrypoint, README, LICENSE, importable as `@preview/name:version`.
+TypstRAG itself is a Python CLI/RAG, so it should not be submitted to Typst Universe as-is.
+
+Possible Universe-worthy companion package:
+
+- [ ] Create a small Typst template package, e.g. `ragged-paper` or another non-canonical name.
+- [ ] Include `typst.toml`, `lib.typ`, `template/main.typ`, README, LICENSE.
+- [ ] Use the RAG to help write/verify the template docs.
+- [ ] Compile example out-of-the-box.
+- [ ] Only then submit PR to `typst/packages` under `packages/preview/{name}/{version}`.
+
+### Phase 9. Optional connectors only if needed
+
+- [ ] Open WebUI / HTTP API: add only if copy-paste or CLI becomes bottleneck.
+- [ ] Claude Desktop MCP: add only if local tool calling is required.
+- [ ] ChatGPT Action backend: requires public HTTPS API; skip until there is a real external-user need.
+
 ## Skipped until needed
 
 - [ ] Rust doc comments: add if symbol/API queries fail
