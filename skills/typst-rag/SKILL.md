@@ -53,11 +53,11 @@ If the user specifically wants the local Ollama model to write the final answer:
 cd "${TYPST_RAG_DIR:-$HOME/TypstRAG}"
 export OPENAI_BASE_URL="http://127.0.0.1:11434/v1"
 export OPENAI_API_KEY="ollama"
-export RAG_LLM_MODEL="gemma3"
+export RAG_LLM_MODEL="ornith:9b"
 uv run typst-rag ask "<question>" --mode openai-compatible
 ```
 
-Replace `gemma3` with the exact model from `ollama list`.
+Replace `ornith:9b` with the exact model from `ollama list`.
 
 ## Boundaries
 

@@ -37,7 +37,7 @@ Hermes uses TypstRAG for retrieval and any current Hermes model for the final an
 cd "${TYPST_RAG_DIR:-$HOME/TypstRAG}"
 export OPENAI_BASE_URL="http://127.0.0.1:11434/v1"
 export OPENAI_API_KEY="ollama"
-export RAG_LLM_MODEL="gemma3"   # or exact name from `ollama list`
+export RAG_LLM_MODEL="ornith:9b"   # or exact name from `ollama list`
 uv run typst-rag ask "prepare a Typst layout for an academic article" --mode openai-compatible
 ```
 
