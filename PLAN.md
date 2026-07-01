@@ -83,7 +83,7 @@ Ponytail priority: make local use and professor sharing solid before adding host
 ### Phase 6. Package-quality local distribution
 
 - [ ] Add install/update docs for normal users: clone, `uv sync`, `build-all`, update `TYPST_VERSION`.
-- [ ] Add `typst-rag doctor` command: verify `uv`, data dirs, LanceDB table, docs version, embedding model.
+- [x] Add `typst-rag doctor` command: verify data dirs, document/chunk counts, LanceDB table, docs version, embedding model.
 - [ ] Add `typst-rag update-docs --version vX.Y.Z` command instead of manually editing `config.py`.
 - [ ] Add a small fixture-based test for collect/chunk/search so packaging regressions are caught.
 - [ ] Add GitHub release checklist: tag, smoke test, wiki links, skill raw URL.

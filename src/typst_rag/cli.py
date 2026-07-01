@@ -1,3 +1,4 @@
+import lancedb
 import typer
 from rich import print
 
@@ -5,6 +6,7 @@ from .answer import openai_compatible, retrieval_only
 from .build_index import build_index
 from .chunk import chunk_documents
 from .collect import collect_documents
+from .config import CHUNKS_JSONL, DOCUMENTS_JSONL, EMBEDDING_MODEL, LANCEDB_DIR, LANCEDB_TABLE, TYPST_REPO_DIR, TYPST_VERSION
 from .evaluate import evaluate
 from .fetch_typst import fetch_typst
 from .search import format_results, search as run_search
@@ -38,6 +40,30 @@ def build_all() -> None:
     collect_documents()
     chunk_documents()
     build_index()
+
+
+@app.command()
+def doctor() -> None:
+    checks: list[tuple[str, bool, str]] = []
+    checks.append(("typst repo", TYPST_REPO_DIR.exists(), f"{TYPST_REPO_DIR} @ {TYPST_VERSION}"))
+    checks.append(("documents", DOCUMENTS_JSONL.exists(), str(DOCUMENTS_JSONL)))
+    checks.append(("chunks", CHUNKS_JSONL.exists(), str(CHUNKS_JSONL)))
+    if DOCUMENTS_JSONL.exists():
+        checks.append(("document count", True, str(sum(1 for _ in DOCUMENTS_JSONL.open(encoding="utf-8")))))
+    if CHUNKS_JSONL.exists():
+        checks.append(("chunk count", True, str(sum(1 for _ in CHUNKS_JSONL.open(encoding="utf-8")))))
+    try:
+        table = lancedb.connect(LANCEDB_DIR).open_table(LANCEDB_TABLE)
+        checks.append(("lancedb table", True, f"{LANCEDB_TABLE}: {table.count_rows()} rows"))
+    except Exception as exc:
+        checks.append(("lancedb table", False, str(exc)))
+    checks.append(("embedding model", True, EMBEDDING_MODEL))
+    failed = False
+    for name, ok, detail in checks:
+        failed |= not ok
+        print(f"{'OK' if ok else 'FAIL'} {name}: {detail}")
+    if failed:
+        raise typer.Exit(1)
 
 
 @app.command("search")
