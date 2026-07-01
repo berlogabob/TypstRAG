@@ -55,5 +55,7 @@ See:
 - [docs/RAG-SOURCES.md](docs/RAG-SOURCES.md)
 - [docs/PONYTAIL.md](docs/PONYTAIL.md)
 - [docs/RELEASE.md](docs/RELEASE.md)
+- [docs/UNIVERSE.md](docs/UNIVERSE.md)
 - [examples/academic-paper](examples/academic-paper)
+- [packages/ragged-paper](packages/ragged-paper)
 - [wiki](https://github.com/berlogabob/TypstRAG/wiki)

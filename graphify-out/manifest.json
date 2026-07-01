@@ -60,13 +60,13 @@
     "semantic_hash": ""
   },
   "PLAN.md": {
-    "mtime": 1782945884.1243567,
-    "ast_hash": "f0816fc6d181489e76cbf592c7890e66",
+    "mtime": 1782948076.9988964,
+    "ast_hash": "1232012fc18e54c34767ea8d4c1f5c01",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1782945851.097072,
-    "ast_hash": "edaeac726f3a07fe4055ee4b766ae7ef",
+    "mtime": 1782948049.2138128,
+    "ast_hash": "35269250025d4283d9b666dd2656beb3",
     "semantic_hash": ""
   },
   "_income/typst_lancedb_rag_report.md": {
@@ -122,6 +122,26 @@
   "examples/academic-paper/main.pdf": {
     "mtime": 1782945956.7835238,
     "ast_hash": "aaaf96105e917a690f024f5a51ff15ae",
+    "semantic_hash": ""
+  },
+  "docs/UNIVERSE.md": {
+    "mtime": 1782948049.2098784,
+    "ast_hash": "5ddd1654048b1b707d61629fc9e08775",
+    "semantic_hash": ""
+  },
+  "packages/ragged-paper/README.md": {
+    "mtime": 1782948003.5612721,
+    "ast_hash": "a8b0cc7b20735206d41528c3944af66a",
+    "semantic_hash": ""
+  },
+  "packages/ragged-paper/example.pdf": {
+    "mtime": 1782948109.627714,
+    "ast_hash": "b49865aa287250b0b5120a1c4985af68",
+    "semantic_hash": ""
+  },
+  "packages/ragged-paper/thumbnail.png": {
+    "mtime": 1782948109.8057013,
+    "ast_hash": "a104f4d854e3aa25e592f321404436bf",
     "semantic_hash": ""
   }
 }

@@ -41,8 +41,12 @@ Ponytail target: working retrieval first. No Docker, LangChain, LlamaIndex, API,
   - [x] polished project page/demo
   - [x] academic paper `.typ` example
   - [x] citation examples
+- [x] 8. Typst Universe companion template
+  - [x] `packages/ragged-paper` package skeleton
+  - [x] local `typst init` verification
+  - [x] compile example PDF
 
-Current step: **8. Typst Universe decision / companion template only if needed**.
+Current step: **9. Optional connectors only if needed**.
 
 ## Evidence
 
@@ -57,6 +61,7 @@ LLM adapter: `typst-rag ask --mode openai-compatible`, stdlib urllib, no new dep
 Hermes integration: `skills/typst-rag/SKILL.md` + `docs/USAGE.md`; use retrieval as context with any Hermes model
 Portable usage docs: clone locally, set `TYPST_RAG_DIR`, install skill from raw GitHub URL, Pages/FTP are static-only
 Professor artifact: `docs/DEMO.md`, `docs/RAG-SOURCES.md`, `examples/academic-paper/main.typ`, compiled PDF OK
+Universe companion: `packages/ragged-paper`, local `typst init @preview/ragged-paper:0.1.0` + compile OK
 ```
 
 ## Goal
@@ -110,10 +115,10 @@ TypstRAG itself is a Python CLI/RAG, so it should not be submitted to Typst Univ
 
 Possible Universe-worthy companion package:
 
-- [ ] Create a small Typst template package, e.g. `ragged-paper` or another non-canonical name.
-- [ ] Include `typst.toml`, `lib.typ`, `template/main.typ`, README, LICENSE.
-- [ ] Use the RAG to help write/verify the template docs.
-- [ ] Compile example out-of-the-box.
+- [x] Create a small Typst template package: `ragged-paper`.
+- [x] Include `typst.toml`, `lib.typ`, `template/main.typ`, README, LICENSE.
+- [x] Use the RAG to help write/verify the template docs.
+- [x] Compile example out-of-the-box.
 - [ ] Only then submit PR to `typst/packages` under `packages/preview/{name}/{version}`.
 
 ### Phase 9. Optional connectors only if needed

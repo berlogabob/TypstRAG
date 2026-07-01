@@ -1,0 +1,17 @@
+[package]
+name = "ragged-paper"
+version = "0.1.0"
+entrypoint = "lib.typ"
+authors = ["BerlogaBob <@berlogabob>"]
+license = "MIT"
+description = "Small two-column academic paper."
+repository = "https://github.com/berlogabob/TypstRAG"
+keywords = ["academic", "paper", "two-column"]
+categories = ["paper", "layout"]
+compiler = "0.15.0"
+exclude = ["/example.pdf"]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"
