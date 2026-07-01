@@ -47,6 +47,7 @@ eval: 5 questions, average expected-term hit rate 1.00
 dedupe: search output now shows unique source_path entries
 LLM adapter: `typst-rag ask --mode openai-compatible`, stdlib urllib, no new dependency
 Hermes integration: `skills/typst-rag/SKILL.md` + `docs/USAGE.md`; use retrieval as context with any Hermes model
+Portable usage docs: clone locally, set `TYPST_RAG_DIR`, install skill from raw GitHub URL, Pages/FTP are static-only
 ```
 
 ## Goal
