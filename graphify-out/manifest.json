@@ -60,13 +60,13 @@
     "semantic_hash": ""
   },
   "PLAN.md": {
-    "mtime": 1782945082.1466222,
-    "ast_hash": "2fd305307257b035ca3f51449d6e2a6a",
+    "mtime": 1782945884.1243567,
+    "ast_hash": "f0816fc6d181489e76cbf592c7890e66",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1782945070.500185,
-    "ast_hash": "8709de9e4ba9b1be1dc549d1426850f8",
+    "mtime": 1782945851.097072,
+    "ast_hash": "edaeac726f3a07fe4055ee4b766ae7ef",
     "semantic_hash": ""
   },
   "_income/typst_lancedb_rag_report.md": {
@@ -102,6 +102,26 @@
   "docs/RELEASE.md": {
     "mtime": 1782945062.3651657,
     "ast_hash": "eacf1d6f94bc8e8e8bbc4012be048469",
+    "semantic_hash": ""
+  },
+  "docs/DEMO.md": {
+    "mtime": 1782945808.4535909,
+    "ast_hash": "3c6475fb62b9467b59fc9acd9abee98d",
+    "semantic_hash": ""
+  },
+  "docs/RAG-SOURCES.md": {
+    "mtime": 1782945816.2721756,
+    "ast_hash": "7a918f84f9b22afec2cd82147fc44334",
+    "semantic_hash": ""
+  },
+  "examples/academic-paper/README.md": {
+    "mtime": 1782945843.9482083,
+    "ast_hash": "292662d7bbb5e06c0beeeb4521a3a2bc",
+    "semantic_hash": ""
+  },
+  "examples/academic-paper/main.pdf": {
+    "mtime": 1782945956.7835238,
+    "ast_hash": "aaaf96105e917a690f024f5a51ff15ae",
     "semantic_hash": ""
   }
 }

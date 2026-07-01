@@ -23,7 +23,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "scripts_smoke",
-      "community": 9,
+      "community": 1,
       "norm_label": "smoke.py"
     },
     {
@@ -83,7 +83,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_build_index",
-      "community": 5,
+      "community": 9,
       "norm_label": "build_index.py"
     },
     {
@@ -93,7 +93,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "src_typst_rag_build_index_build_index",
-      "community": 1,
+      "community": 9,
       "norm_label": "build_index()"
     },
     {
@@ -143,7 +143,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_cli",
-      "community": 1,
+      "community": 9,
       "norm_label": "cli.py"
     },
     {
@@ -153,7 +153,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "src_typst_rag_cli_fetch",
-      "community": 1,
+      "community": 9,
       "norm_label": "fetch()"
     },
     {
@@ -183,7 +183,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "src_typst_rag_cli_build_index_cmd",
-      "community": 1,
+      "community": 9,
       "norm_label": "build_index_cmd()"
     },
     {
@@ -193,7 +193,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "src_typst_rag_cli_build_all",
-      "community": 1,
+      "community": 9,
       "norm_label": "build_all()"
     },
     {
@@ -203,7 +203,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "src_typst_rag_cli_update_docs",
-      "community": 1,
+      "community": 9,
       "norm_label": "update_docs()"
     },
     {
@@ -213,7 +213,7 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "src_typst_rag_cli_doctor",
-      "community": 1,
+      "community": 9,
       "norm_label": "doctor()"
     },
     {
@@ -333,7 +333,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_config",
-      "community": 5,
+      "community": 9,
       "norm_label": "config.py"
     },
     {
@@ -343,7 +343,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_embed",
-      "community": 5,
+      "community": 9,
       "norm_label": "embed.py"
     },
     {
@@ -353,7 +353,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "src_typst_rag_embed_model",
-      "community": 5,
+      "community": 1,
       "norm_label": "model()"
     },
     {
@@ -363,7 +363,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "sentencetransformer",
-      "community": 5,
+      "community": 1,
       "norm_label": "sentencetransformer"
     },
     {
@@ -373,7 +373,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "src_typst_rag_embed_embed_passages",
-      "community": 5,
+      "community": 9,
       "norm_label": "embed_passages()"
     },
     {
@@ -383,7 +383,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "src_typst_rag_embed_embed_query",
-      "community": 5,
+      "community": 1,
       "norm_label": "embed_query()"
     },
     {
@@ -413,7 +413,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_typst_rag_fetch_typst",
-      "community": 1,
+      "community": 9,
       "norm_label": "fetch_typst.py"
     },
     {
@@ -423,7 +423,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "src_typst_rag_fetch_typst_fetch_typst",
-      "community": 1,
+      "community": 9,
       "norm_label": "fetch_typst()"
     },
     {
@@ -530,7 +530,7 @@
       "label": "Goal",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L61",
+      "source_location": "L62",
       "_origin": "ast",
       "id": "plan_goal",
       "community": 3,
@@ -540,7 +540,7 @@
       "label": "Commands",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L71",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "plan_commands",
       "community": 3,
@@ -550,7 +550,7 @@
       "label": "Acceptance",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L79",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "plan_acceptance",
       "community": 3,
@@ -560,7 +560,7 @@
       "label": "Next Improvements Roadmap",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L87",
+      "source_location": "L88",
       "_origin": "ast",
       "id": "plan_next_improvements_roadmap",
       "community": 3,
@@ -570,7 +570,7 @@
       "label": "Phase 6. Package-quality local distribution",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L91",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "plan_phase_6_package_quality_local_distribution",
       "community": 3,
@@ -580,7 +580,7 @@
       "label": "Phase 7. Professor-facing artifact",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L99",
+      "source_location": "L100",
       "_origin": "ast",
       "id": "plan_phase_7_professor_facing_artifact",
       "community": 3,
@@ -590,7 +590,7 @@
       "label": "Phase 8. Typst Universe decision",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L105",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "plan_phase_8_typst_universe_decision",
       "community": 3,
@@ -600,7 +600,7 @@
       "label": "Phase 9. Optional connectors only if needed",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L118",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "plan_phase_9_optional_connectors_only_if_needed",
       "community": 3,
@@ -610,7 +610,7 @@
       "label": "Skipped until needed",
       "file_type": "document",
       "source_file": "PLAN.md",
-      "source_location": "L124",
+      "source_location": "L125",
       "_origin": "ast",
       "id": "plan_skipped_until_needed",
       "community": 3,
@@ -1027,6 +1027,56 @@
       "norm_label": "25. minimal smoke test checklist"
     },
     {
+      "label": "DEMO.md",
+      "file_type": "document",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_demo",
+      "community": 2,
+      "norm_label": "demo.md"
+    },
+    {
+      "label": "TypstRAG demo",
+      "file_type": "document",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_demo_typstrag_demo",
+      "community": 2,
+      "norm_label": "typstrag demo"
+    },
+    {
+      "label": "Run",
+      "file_type": "document",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "docs_demo_run",
+      "community": 2,
+      "norm_label": "run"
+    },
+    {
+      "label": "What this proves",
+      "file_type": "document",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "docs_demo_what_this_proves",
+      "community": 2,
+      "norm_label": "what this proves"
+    },
+    {
+      "label": "Example artifact",
+      "file_type": "document",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "docs_demo_example_artifact",
+      "community": 2,
+      "norm_label": "example artifact"
+    },
+    {
       "label": "PONYTAIL.md",
       "file_type": "document",
       "source_file": "docs/PONYTAIL.md",
@@ -1045,6 +1095,26 @@
       "id": "docs_ponytail_ponytail_prompt",
       "community": 2,
       "norm_label": "ponytail prompt"
+    },
+    {
+      "label": "RAG-SOURCES.md",
+      "file_type": "document",
+      "source_file": "docs/RAG-SOURCES.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_rag_sources",
+      "community": 2,
+      "norm_label": "rag-sources.md"
+    },
+    {
+      "label": "RAG sources for the academic paper example",
+      "file_type": "document",
+      "source_file": "docs/RAG-SOURCES.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_rag_sources_rag_sources_for_the_academic_paper_example",
+      "community": 2,
+      "norm_label": "rag sources for the academic paper example"
     },
     {
       "label": "RELEASE.md",
@@ -1083,7 +1153,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_usage_using_typstrag",
-      "community": 2,
+      "community": 5,
       "norm_label": "using typstrag"
     },
     {
@@ -1093,7 +1163,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "docs_usage_1_local_install",
-      "community": 2,
+      "community": 5,
       "norm_label": "1. local install"
     },
     {
@@ -1103,7 +1173,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "docs_usage_2_hermes_skill_any_hermes_model",
-      "community": 2,
+      "community": 5,
       "norm_label": "2. hermes skill: any hermes model"
     },
     {
@@ -1113,7 +1183,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "docs_usage_3_local_ollama_answer_mode",
-      "community": 2,
+      "community": 5,
       "norm_label": "3. local ollama answer mode"
     },
     {
@@ -1123,7 +1193,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "docs_usage_4_plain_ollama_chat",
-      "community": 2,
+      "community": 5,
       "norm_label": "4. plain ollama chat"
     },
     {
@@ -1133,7 +1203,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "docs_usage_5_chatgpt_or_claude_web_chat",
-      "community": 2,
+      "community": 5,
       "norm_label": "5. chatgpt or claude web chat"
     },
     {
@@ -1143,7 +1213,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "docs_usage_6_github_pages_ftp_hosting",
-      "community": 2,
+      "community": 5,
       "norm_label": "6. github pages / ftp hosting"
     },
     {
@@ -1153,7 +1223,7 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "docs_usage_7_example_questions",
-      "community": 2,
+      "community": 5,
       "norm_label": "7. example questions"
     },
     {
@@ -1163,8 +1233,28 @@
       "source_location": "L120",
       "_origin": "ast",
       "id": "docs_usage_8_ponytail_prompt",
-      "community": 2,
+      "community": 5,
       "norm_label": "8. ponytail prompt"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "examples/academic-paper/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "examples_academic_paper_readme",
+      "community": 2,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "Academic paper example",
+      "file_type": "document",
+      "source_file": "examples/academic-paper/README.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "examples_academic_paper_readme_academic_paper_example",
+      "community": 2,
+      "norm_label": "academic paper example"
     },
     {
       "label": "answer_system.md",
@@ -2398,7 +2488,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L79",
+      "source_location": "L80",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_acceptance",
@@ -2408,7 +2498,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L71",
+      "source_location": "L72",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_commands",
@@ -2428,7 +2518,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_goal",
@@ -2438,7 +2528,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L87",
+      "source_location": "L88",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_next_improvements_roadmap",
@@ -2458,7 +2548,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L124",
+      "source_location": "L125",
       "weight": 1.0,
       "source": "plan_working_plan_typst_rag_with_lancedb",
       "target": "plan_skipped_until_needed",
@@ -2468,7 +2558,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_6_package_quality_local_distribution",
@@ -2478,7 +2568,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L99",
+      "source_location": "L100",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_7_professor_facing_artifact",
@@ -2488,7 +2578,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L105",
+      "source_location": "L106",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_8_typst_universe_decision",
@@ -2498,7 +2588,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "PLAN.md",
-      "source_location": "L118",
+      "source_location": "L119",
       "weight": 1.0,
       "source": "plan_next_improvements_roadmap",
       "target": "plan_phase_9_optional_connectors_only_if_needed",
@@ -2511,6 +2601,16 @@
       "source_location": "L54",
       "weight": 1.0,
       "source": "readme",
+      "target": "docs_demo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "readme",
       "target": "docs_ponytail",
       "confidence_score": 1.0
     },
@@ -2519,6 +2619,16 @@
       "confidence": "EXTRACTED",
       "source_file": "README.md",
       "source_location": "L55",
+      "weight": 1.0,
+      "source": "readme",
+      "target": "docs_rag_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L57",
       "weight": 1.0,
       "source": "readme",
       "target": "docs_release",
@@ -2927,6 +3037,56 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_demo",
+      "target": "docs_demo_typstrag_demo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "docs_demo",
+      "target": "docs_rag_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "docs_demo_typstrag_demo",
+      "target": "docs_demo_example_artifact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "docs_demo_typstrag_demo",
+      "target": "docs_demo_run",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/DEMO.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "docs_demo_typstrag_demo",
+      "target": "docs_demo_what_this_proves",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/PONYTAIL.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -2942,6 +3102,26 @@
       "weight": 1.0,
       "source": "docs_usage",
       "target": "docs_ponytail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/RAG-SOURCES.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_rag_sources",
+      "target": "docs_rag_sources_rag_sources_for_the_academic_paper_example",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "examples/academic-paper/README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "examples_academic_paper_readme",
+      "target": "docs_rag_sources",
       "confidence_score": 1.0
     },
     {
@@ -3047,6 +3227,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "examples/academic-paper/README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "examples_academic_paper_readme",
+      "target": "examples_academic_paper_readme_academic_paper_example",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "skills/typst-rag/SKILL.md",
       "source_location": "L14",
       "weight": 1.0,
@@ -3096,5 +3286,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "629ee011fc0aaa67ec83bcbd05a277cb9f45b886"
+  "built_at_commit": "81873b5423c47c2b9e27681fab93c0506e5a19f2"
 }

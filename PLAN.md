@@ -37,12 +37,12 @@ Ponytail target: working retrieval first. No Docker, LangChain, LlamaIndex, API,
   - [x] `typst-rag update-docs`
   - [x] smoke check
   - [x] release checklist
-- [ ] 7. Professor-facing artifact
-  - [ ] polished project page/demo
-  - [ ] academic paper `.typ` example
-  - [ ] citation examples
+- [x] 7. Professor-facing artifact
+  - [x] polished project page/demo
+  - [x] academic paper `.typ` example
+  - [x] citation examples
 
-Current step: **7. Professor-facing artifact**.
+Current step: **8. Typst Universe decision / companion template only if needed**.
 
 ## Evidence
 
@@ -56,6 +56,7 @@ dedupe: search output now shows unique source_path entries
 LLM adapter: `typst-rag ask --mode openai-compatible`, stdlib urllib, no new dependency
 Hermes integration: `skills/typst-rag/SKILL.md` + `docs/USAGE.md`; use retrieval as context with any Hermes model
 Portable usage docs: clone locally, set `TYPST_RAG_DIR`, install skill from raw GitHub URL, Pages/FTP are static-only
+Professor artifact: `docs/DEMO.md`, `docs/RAG-SOURCES.md`, `examples/academic-paper/main.typ`, compiled PDF OK
 ```
 
 ## Goal
@@ -98,9 +99,9 @@ Ponytail priority: make local use and professor sharing solid before adding host
 
 ### Phase 7. Professor-facing artifact
 
-- [ ] Add a polished project page/demo: screenshots, architecture diagram, usage paths.
-- [ ] Add one academic-paper Typst example generated with the RAG and verified with `typst compile`.
-- [ ] Add citation examples for source docs used in answers.
+- [x] Add a polished project page/demo: architecture diagram, usage paths.
+- [x] Add one academic-paper Typst example generated with the RAG and verified with `typst compile`.
+- [x] Add citation examples for source docs used in answers.
 
 ### Phase 8. Typst Universe decision
 

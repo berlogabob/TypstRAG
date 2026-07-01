@@ -51,6 +51,9 @@ uv run typst-rag ask "prepare a Typst layout for an academic article" --mode ope
 See:
 
 - [docs/USAGE.md](docs/USAGE.md)
+- [docs/DEMO.md](docs/DEMO.md)
+- [docs/RAG-SOURCES.md](docs/RAG-SOURCES.md)
 - [docs/PONYTAIL.md](docs/PONYTAIL.md)
 - [docs/RELEASE.md](docs/RELEASE.md)
+- [examples/academic-paper](examples/academic-paper)
 - [wiki](https://github.com/berlogabob/TypstRAG/wiki)
