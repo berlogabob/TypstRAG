@@ -1,8 +1,13 @@
 # TypstRAG
+What is TypstRAG? It's a local [Retrieval-Augmented Generation (RAG)](https://en.wikipedia.org/wiki/Retrieval-augmented_generation) system for [Typst](https://typst.app), the modern [typesetting](https://en.wikipedia.org/wiki/Typesetting) system. It allows you to ask questions about Typst and get answers based on the official documentation (and other trusted sources in future).
 
-Local RAG over Typst `v0.15.0` docs: clone repo, build the index once, then ask Typst questions from CLI, Hermes, or local Ollama.
+Local RAG build over Typst official `v0.15.0` docs.
+To work with it: clone repo, build the index once, then ask Typst questions from CLI, Hermes, or local Ollama.
 
 ## Install locally
+### Dependencies
+[git](https://git-scm.com/), [uv](https://github.com/astral-sh/uv) for [Python](https://www.python.org/) 3.12.
+
 
 ```bash
 git clone https://github.com/berlogabob/TypstRAG.git
