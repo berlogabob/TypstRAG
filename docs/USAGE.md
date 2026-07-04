@@ -12,6 +12,10 @@ uv run typst-rag build-all
 uv run typst-rag doctor
 uv run python scripts/smoke.py
 uv run typst-rag ask "how to make a two-column academic paper?" --limit 5
+
+# machine-readable sidecar output
+uv run typst-rag search "label and reference syntax" --limit 5 --json
+uv run typst-rag doctor --json
 ```
 
 When Typst releases a new docs tag:

@@ -11,7 +11,7 @@ from .collect import collect_documents
 from .config import CHUNKS_JSONL, DOCUMENTS_JSONL, EMBEDDING_MODEL, LANCEDB_DIR, LANCEDB_TABLE, TYPST_REPO_DIR, TYPST_VERSION
 from .evaluate import evaluate
 from .fetch_typst import fetch_typst
-from .search import format_results, search as run_search
+from .search import format_results, json_results, search as run_search
 
 app = typer.Typer(help="Retrieval-only RAG over Typst docs using LanceDB")
 
@@ -54,7 +54,7 @@ def update_docs(version: str) -> None:
 
 
 @app.command()
-def doctor() -> None:
+def doctor(json_output: bool = typer.Option(False, "--json")) -> None:
     checks: list[tuple[str, bool, str]] = []
     checks.append(("typst repo", TYPST_REPO_DIR.exists(), f"{TYPST_REPO_DIR} @ {TYPST_VERSION}"))
     checks.append(("documents", DOCUMENTS_JSONL.exists(), str(DOCUMENTS_JSONL)))
@@ -75,14 +75,29 @@ def doctor() -> None:
     failed = False
     for name, ok, detail in checks:
         failed |= not ok
-        print(f"{'OK' if ok else 'FAIL'} {name}: {detail}")
+    if json_output:
+        typer.echo(json.dumps({"ok": not failed, "checks": [
+            {"name": name, "ok": ok, "detail": detail} for name, ok, detail in checks
+        ]}))
+    else:
+        for name, ok, detail in checks:
+            print(f"{'OK' if ok else 'FAIL'} {name}: {detail}")
     if failed:
         raise typer.Exit(1)
 
 
 @app.command("search")
-def search_cmd(query: str, limit: int = 8, mode: str = "hybrid") -> None:
-    print(format_results(run_search(query, limit=limit, mode=mode)))  # type: ignore[arg-type]
+def search_cmd(
+    query: str,
+    limit: int = 8,
+    mode: str = "hybrid",
+    json_output: bool = typer.Option(False, "--json"),
+) -> None:
+    results = run_search(query, limit=limit, mode=mode)  # type: ignore[arg-type]
+    if json_output:
+        typer.echo(json.dumps(json_results(results), ensure_ascii=False))
+    else:
+        print(format_results(results))
 
 
 @app.command()

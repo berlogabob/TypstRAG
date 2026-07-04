@@ -39,3 +39,25 @@ def format_results(df: pd.DataFrame, max_chars: int = 1200) -> str:
             f"{text}"
         )
     return "\n\n---\n\n".join(blocks)
+
+
+def json_results(df: pd.DataFrame, max_chars: int = 1200) -> list[dict[str, object]]:
+    results = []
+    seen = set()
+    for _, row in df.iterrows():
+        source = str(row.get("source_path", ""))
+        if source in seen:
+            continue
+        seen.add(source)
+        score = row.get("_relevance_score", row.get("_distance"))
+        results.append(
+            {
+                "section": str(row.get("section", "")),
+                "source_path": source,
+                "url": str(row.get("url", "")),
+                "version": str(row.get("version", "")),
+                "excerpt": str(row.get("text", ""))[:max_chars],
+                "score": None if pd.isna(score) else float(score),
+            }
+        )
+    return results

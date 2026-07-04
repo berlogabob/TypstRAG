@@ -1,6 +1,6 @@
 from typst_rag.chunk import sliding, split_headings
 from typst_rag.collect import stable_id
-from typst_rag.search import search
+from typst_rag.search import json_results, search
 
 
 sections = split_headings("= A\ntext\n\n== B\nmore")
@@ -11,5 +11,7 @@ assert stable_id("v0.15.0", "docs/content/index.typ") == stable_id("v0.15.0", "d
 results = search("two columns page setup", limit=3)
 assert not results.empty, "search returned no rows"
 assert "source_path" in results.columns, results.columns
+payload = json_results(results)
+assert payload and {"source_path", "url", "version", "section", "excerpt", "score"} <= payload[0].keys()
 
 print("smoke ok")
